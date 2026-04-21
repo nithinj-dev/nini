@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us — Bali Travel Guide</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf4;
+    color: #1f2937;
+}
+
+header {
+    position: relative;
+    height: 50vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("https://vacations.aircanada.com/.imaging/focalarea/cinema/1200x/dam/jcr:b3193e9a-c74b-47da-8b17-992b1332e9c7/Bali-Long-Stay-Escape-202506-SINBLO-01_Nusa-Dea-Beach-Bali.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 10;
+}
+
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    height: 42px;
+    width: auto;
+}
+.site-name {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-weight: bold;
+    text
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto 60px;
+    padding: 0 15px;
+}
+
+.contact-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+label {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+input, textarea {
+    border-radius: 10px;
+}
+
+.btn-premium {
+    background: #facc15;
+    font-weight: 700;
+    border-radius: 12px;
+}
+
+.btn-premium:hover {
+    background: #eab308;
+}
+
+.info-box {
+    background: #f9fafb;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #f2e6d9;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+   <nav class="navbar">
+    <div class="nav-left">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJYGUDkNzZrCz0V9CXJjMLKh7iOpLuxKgkKA&s" alt="Bali Logo" class="logo">
+        <span class="site-name">Bali Escape</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="places.html">Places</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+    <div>
+        <h1 class="display-5 fw-bold">Contact Our Travel Experts</h1>
+        <p class="lead">Luxury Bali experiences crafted just for you</p>
+    </div>
+</header>
+
+<main>
+
+<div class="row g-4">
+
+    <div class="col-md-7">
+        <div class="contact-card h-100">
+            <h4 class="fw-bold mb-4">Enquire Your Journey</h4>
+
+            <form id="contact-form">
+                <div class="mb-3">
+                    <label>Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label>Travel Date</label>
+                    <input type="date" class="form-control" required>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label>Guests</label>
+                        <input type="number" min="1" class="form-control" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label>Nights</label>
+                        <input type="number" min="1" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label>Preferences</label>
+                    <textarea class="form-control" rows="3"
+                        placeholder="Honeymoon, luxury villas, adventure..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-premium w-100 mt-2">
+                    REQUEST ITINERARY
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-md-5">
+        <div class="contact-card h-100">
+            <h4 class="fw-bold mb-4">Why Choose Us</h4>
+
+            <div class="info-box">
+                🌿 <strong>Bespoke Travel</strong><br>
+                Tailor-made luxury itineraries
+            </div>
+
+            <div class="info-box">
+                🏨 <strong>Handpicked Resorts</strong><br>
+                Premium hotels & villas
+            </div>
+
+            <div class="info-box">
+                🤝 <strong>Expert Support</strong><br>
+                Dedicated travel consultants
+            </div>
+
+            <hr>
+
+            <h6 class="fw-bold mt-3">Travel Insights</h6>
+            <form id="newsletter-form">
+                <input type="email" class="form-control mb-2" placeholder="Your email" required>
+                <button class="btn btn-premium w-100">SUBSCRIBE</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+</main>
+
+<footer>
+    © 2025 Bali Travel Guide • Premium Travel Experiences
+</footer>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", e => {
+    e.preventDefault();
+    alert("Thank you! Our travel expert will contact you shortly.");
+    e.target.reset();
+});
+
+document.getElementById("newsletter-form").addEventListener("submit", e => {
+    e.preventDefault();
+    alert("Subscribed successfully!");
+    e.target.reset();
+});
+</script>
+
+</body>
+</html>

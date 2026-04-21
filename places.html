@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bali Travel Guide — Places</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+
+       header {
+    position: relative;
+    height: 55vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("https://storage.googleapis.com/stateless-www-justwravel-com/2025/05/840b6004-3.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 10;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    height: 42px;
+    width: auto;
+}
+
+.site-name {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-weight: bold;
+    text
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 15px;
+        }
+
+        .filter-bar {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .place-img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card {
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        footer {
+            background: #f2e6d9;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="nav-left">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJYGUDkNzZrCz0V9CXJjMLKh7iOpLuxKgkKA&s" alt="Bali Logo" class="logo">
+        <span class="site-name">Bali Escape</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="places.html">Places</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+
+    <div>
+        <h1 class="display-5">Places to Visit in Bali</h1>
+        <p class="lead">Culture • Nature • Beaches • Adventure</p>
+    </div>
+</header>
+
+<main>
+
+    <div class="filter-bar">
+        <button class="btn btn-outline-dark filter-btn" data-tag="all">All</button>
+        <button class="btn btn-outline-success filter-btn" data-tag="Culture">Culture</button>
+        <button class="btn btn-outline-primary filter-btn" data-tag="Nature">Nature</button>
+        <button class="btn btn-outline-warning filter-btn" data-tag="Adventure">Adventure</button>
+        <button class="btn btn-outline-info filter-btn" data-tag="Beaches">Beaches</button>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4 place-card">
+            <div class="card h-100">
+                <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/hqfdcwl3iatociddkwti/Ubud%20Jungle%20Club%2C%20Mount%20Batur%20Jeep%2C%20and%20Waterfall%20Tour%20Land%20Tour.jpg"
+                     class="card-img-top place-img">
+                <div class="card-body">
+                    <h5>Ubud</h5>
+                    <p class="small">Rice terraces, art, yoga & spiritual vibes.</p>
+                    <span class="badge bg-success">Culture</span>
+                    <span class="badge bg-primary">Nature</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 place-card">
+            <div class="card h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEgfs3ZuQJAM0AgJbrY4OxSS70FNxwilS2HQ&s"
+                     class="card-img-top place-img">
+                <div class="card-body">
+                    <h5>Tibumana Waterfall</h5>
+                    <p class="small">Peaceful jungle waterfall.</p>
+                    <span class="badge bg-primary">Nature</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 place-card">
+            <div class="card h-100">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/e8/35/e3/mount-batur-bali-trekking.jpg"
+                     class="card-img-top place-img">
+                <div class="card-body">
+                    <h5>Mount Batur</h5>
+                    <p class="small">Sunrise trek & volcano views.</p>
+                    <span class="badge bg-warning">Adventure</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 place-card">
+            <div class="card h-100">
+                <img src="https://shewandersabroad.com/wp-content/uploads/2025/01/Rumah-Pohon-Tree-House-Nusa-Penida-1.jpg"
+                     class="card-img-top place-img">
+                <div class="card-body">
+                    <h5>Nusa Islands</h5>
+                    <p class="small">Cliffs, beaches & snorkeling.</p>
+                    <span class="badge bg-info">Beaches</span>
+                </div>
+            </div>
+        </div>
+
+<div class="col-md-6 col-lg-4 place-card" id="uluwatu">
+  <div class="card h-100">
+    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/11/f9/fe/57.jpg"
+         class="card-img-top place-img">
+    <div class="card-body">
+      <h5>Uluwatu Temple</h5>
+      <p class="small">Cliffside temple with sunset & Kecak dance.</p>
+      <span class="badge bg-success">Culture</span>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 place-card" id="tanahlot">
+  <div class="card h-100">
+    <img src="https://visitbalitour.com/wp-content/uploads/2016/12/tanah-lot-temple2.jpg"
+         class="card-img-top place-img">
+    <div class="card-body">
+      <h5>Tanah Lot Temple</h5>
+      <p class="small">Iconic sea temple best visited at sunset.</p>
+      <span class="badge bg-success">Culture</span>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 place-card" id="lovina">
+  <div class="card h-100">
+    <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/thpi395g1aqxgblachjv/LovinaDolphinWatchingandSnorkelingTourinBali.jpg"
+         class="card-img-top place-img">
+    <div class="card-body">
+      <h5>Lovina Beach</h5>
+      <p class="small">Dolphin watching & peaceful black-sand beach.</p>
+      <span class="badge bg-info">Beaches</span>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 place-card" id="padangpadang">
+  <div class="card h-100">
+    <img src="https://yachtsourcing.com/wp-content/uploads/Uluwatu-Beach-and-Suluban-Beach_-The-Ultimate-Guide-in-2024.jpg"
+         class="card-img-top place-img">
+    <div class="card-body">
+      <h5>Suluban Beach</h5>
+      <p class="small">Hidden cove popular for surfing & cliff views.</p>
+      <span class="badge bg-info">Beaches</span>
+      <span class="badge bg-warning">Adventure</span>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 place-card" id="goagajah">
+  <div class="card h-100">
+    <img src="https://fokibalitours.com/wp-content/uploads/2025/04/goa-gajah.webp"
+         class="card-img-top place-img">
+    <div class="card-body">
+      <h5>Goa Gajah</h5>
+      <p class="small">Ancient cave temple with spiritual history.</p>
+      <span class="badge bg-success">Culture</span>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 place-card" id="tirtaempul">
+  <div class="card h-100">
+    <img src="https://www.raftingbali.net/wp-content/uploads/2025/05/ulun-danu-beratan-temple-floating-lake-bali.webp"
+         class="card-img-top place-img">
+    <div class="card-body">
+      <h5>Ulun Danu Beratan</h5>
+      <p class="small">Floating temple on Lake Beratan.</p>
+      <span class="badge bg-success">Culture</span>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 place-card" id="lekekele">
+  <div class="card h-100">
+    <img src="https://www.jaredsdetours.com/wp-content/uploads/2024/05/lekeleke_waterfall_bali-1.jpg"
+         class="card-img-top place-img">
+    <div class="card-body">
+      <h5>Leke Leke Waterfall</h5>
+      <p class="small">Hidden jungle waterfall with scenic trek.</p>
+      <span class="badge bg-primary">Nature</span>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 place-card" id="gateofheaven">
+  <div class="card h-100">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/42/a9/1f/pura-penataran-agung.jpg"
+         class="card-img-top place-img">
+    <div class="card-body">
+      <h5>Gate of Heaven</h5>
+      <p class="small">Famous temple gate framing Mount Agung.</p>
+      <span class="badge bg-success">Culture</span>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+</main>
+
+<footer>
+    &copy; 2025 Bali Travel Guide
+</footer>
+
+<script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.place-card');
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const tag = btn.dataset.tag;
+
+            cards.forEach(card => {
+                if (tag === 'all') {
+                    card.classList.remove('d-none');
+                } else {
+                    const badges = card.querySelectorAll('.badge');
+                    const match = Array.from(badges).some(b => b.textContent === tag);
+                    card.classList.toggle('d-none', !match);
+                }
+            });
+        });
+    });
+</script>
+<script>
+    const buttons = document.querySelectorAll(".filter-btn");
+    const cards = document.querySelectorAll(".place-card");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            const selectedTag = this.getAttribute("data-tag");
+            
+            cards.forEach(card => {
+                const badges = card.querySelectorAll(".badge");
+                let found = false;
+
+                badges.forEach(badge => {
+                    if (badge.innerText === selectedTag) {
+                        found = true;
+                    }
+                });
+
+                if (selectedTag === "all" || found) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>

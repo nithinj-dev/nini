@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bali Travel Guide — Packages</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf4;
+    overflow-x: hidden;
+}
+
+.navbar-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+    padding: 0 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(0,0,0,0.45);
+    z-index: 10;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.site-name {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 22px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+header {
+    position: relative;
+    height: 50vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.45)),
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 15px;
+}
+
+.package-card {
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.package-img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.tag {
+    background: #f1f1f1;
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.icon-text {
+    font-size: 13px;
+    text-align: center;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+footer {
+    background: #f2e6d9;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="navbar-custom">
+    <div class="nav-left">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJYGUDkNzZrCz0V9CXJjMLKh7iOpLuxKgkKA&s"
+             alt="Bali Escape Logo" class="logo">
+        <span class="site-name">Bali Escape</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="places.html">Places</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<div>
+    <h1 class="display-5 fw-bold">Bali Holiday Packages</h1>
+    <p class="lead">Curated experiences • Best prices • Trusted plans</p>
+</div>
+
+</header>
+
+<main>
+
+<div class="row g-4">
+
+<div class="col-md-6 col-lg-4">
+<div class="package-card h-100">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="w-100 package-img">
+
+<div class="p-4 d-flex flex-column h-100">
+<div class="d-flex justify-content-between align-items-center mb-2">
+<h5 class="fw-bold mb-0">Bali Getaway</h5>
+<span class="tag">6 Days</span>
+</div>
+
+<p class="text-muted small">Ubud • Seminyak</p>
+
+<div class="d-flex justify-content-between my-3">
+<div class="icon-text">✈️<br>Flights</div>
+<div class="icon-text">🏨<br>Hotels</div>
+<div class="icon-text">🚗<br>Transfers</div>
+<div class="icon-text">🎯<br>Activities</div>
+</div>
+
+<div class="mt-auto">
+<p class="text-muted small mb-1">Starting from</p>
+<div class="price">₹69,000 <small class="text-muted">/ person</small></div>
+<a href="contact.html" class="btn btn-warning w-100 mt-3">Enquire Now</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+<div class="package-card h-100">
+<img src="https://images.unsplash.com/photo-1519046904884-53103b34b206" class="w-100 package-img">
+
+<div class="p-4 d-flex flex-column h-100">
+<div class="d-flex justify-content-between align-items-center mb-2">
+<h5 class="fw-bold mb-0">Bali Bound</h5>
+<span class="tag">5 Days</span>
+</div>
+
+<p class="text-muted small">Beach Club • Safari</p>
+
+<div class="d-flex justify-content-between my-3">
+<div class="icon-text">✈️ Flights</div>
+<div class="icon-text">🏨 Hotels</div>
+<div class="icon-text">🚗 Transfers</div>
+<div class="icon-text">🎯 Activities</div>
+</div>
+
+<div class="mt-auto">
+<p class="text-muted small mb-1">Starting from</p>
+<div class="price">₹72,000 <small class="text-muted">/ person</small></div>
+<a href="contact.html" class="btn btn-warning w-100 mt-3">Enquire Now</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+<div class="package-card h-100">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="w-100 package-img">
+
+<div class="p-4 d-flex flex-column h-100">
+<div class="d-flex justify-content-between align-items-center mb-2">
+<h5 class="fw-bold mb-0">Beach Bliss</h5>
+<span class="tag">5 Days</span>
+</div>
+
+<p class="text-muted small">Seminyak • Water Sports</p>
+
+<div class="d-flex justify-content-between my-3">
+<div class="icon-text">✈️ Flights</div>
+<div class="icon-text">🏨 Hotel</div>
+<div class="icon-text">🚗 Transfers</div>
+<div class="icon-text">🎯 Activities</div>
+</div>
+
+<div class="mt-auto">
+<p class="text-muted small mb-1">Starting from</p>
+<div class="price">₹74,000 <small class="text-muted">/ person</small></div>
+<a href="contact.html" class="btn btn-warning w-100 mt-3">Enquire Now</a>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</main>
+
+<footer>
+© 2025 Bali Travel Guide
+</footer>
+
+</body>
+</html>
